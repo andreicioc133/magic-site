@@ -29,6 +29,7 @@ import { StyledBox, StyledContainer } from "./StyledComponents";
 import VideoModal from "./VideoModal";
 import VideoPlayerCarousel from "./VideoPlayerCarousel";
 import "./styles.css";
+import NavBar from "./NavBar";
 
 function HomePage() {
   const { smallScreen } = useResponsiveValues();
@@ -63,7 +64,8 @@ function HomePage() {
           minHeight: smallScreen ? "260vh" : "150vh",
           justifyContent: "center",
           alignItems: "center",
-          backgroundImage: "url(" + Background + ")",
+          backgroundImage: smallScreen ? "none" : "url(" + Background + ")",
+          backgroundColor: smallScreen && "black",
           flexGrow: 1,
           paddingLeft: "6vw",
         }}
@@ -77,6 +79,7 @@ function HomePage() {
             callbackSetBack={() => setOpenShowMoreModal(false)}
           />
         </>
+        <NavBar />
         <ImageSlider />
 
         {/* INTRO SECTION */}
@@ -88,6 +91,7 @@ function HomePage() {
         {/*Thanks Videos Section */}
 
         <div
+          id="thanksID"
           style={{
             height: smallScreen && "90vh",
             borderBottom:
@@ -175,6 +179,7 @@ function HomePage() {
         {/* TikTok videos section */}
 
         <div
+          id="videosSectionID"
           style={{
             height: smallScreen && "70vh",
             borderBottom:

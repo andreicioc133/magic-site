@@ -39,6 +39,7 @@ function MiddleTextSection() {
             alignSelf: "center",
             alignItems: "center",
             justifyContent: "center",
+            borderRadius: "10px",
             backgroundColor: theme.palette.primary.blue,
           }}
         >

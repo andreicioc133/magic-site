@@ -8,6 +8,7 @@ export const mainTheme = createTheme({
       white: "white",
       black: "black",
       blue: "#153084",
+      lightBlack: "#0c0c0c",
     },
   },
   typography: {

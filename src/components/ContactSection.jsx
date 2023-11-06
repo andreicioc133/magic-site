@@ -10,6 +10,7 @@ function ContactSection() {
   const { smallScreen } = useResponsiveValues();
   return (
     <StyledContainer
+      id="contactID"
       flexDirection="column"
       style={{
         borderRadius: "10px",

@@ -8,7 +8,7 @@ function GenericBtn({ onClick, width, height, label, style, text }) {
     width: width,
     minHeight: height,
     borderColor: theme.palette.primary.secondary,
-    border: "5px solid" + theme.palette.primary.secondary,
+    border: "1px solid" + theme.palette.primary.secondary,
     // backgroundColor: theme.palette.primary.secondary,
     "&:hover": {
       backgroundColor: theme.palette.primary.secondary,
